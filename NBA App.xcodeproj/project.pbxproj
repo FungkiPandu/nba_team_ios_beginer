@@ -7,15 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		486DB8FD2455729F00C2E39D /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486DB8FC2455729F00C2E39D /* Team.swift */; };
+		486DB8FF2455738500C2E39D /* TeamsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486DB8FE2455738500C2E39D /* TeamsResponse.swift */; };
+		486DB901245574EF00C2E39D /* TeamsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486DB900245574EF00C2E39D /* TeamsRepository.swift */; };
+		486DB9042455C4E000C2E39D /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486DB9032455C4E000C2E39D /* UIImageView.swift */; };
+		48C5B7CD245D871A0036316B /* TeamDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48C5B7CB245D871A0036316B /* TeamDetailViewController.swift */; };
+		48C5B7CE245D871A0036316B /* TeamDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48C5B7CC245D871A0036316B /* TeamDetailViewController.xib */; };
 		48E4B47824552C9C002DEBAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B47724552C9C002DEBAF /* AppDelegate.swift */; };
 		48E4B47A24552C9C002DEBAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B47924552C9C002DEBAF /* SceneDelegate.swift */; };
 		48E4B47C24552C9C002DEBAF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B47B24552C9C002DEBAF /* ViewController.swift */; };
 		48E4B47F24552C9C002DEBAF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4B47D24552C9C002DEBAF /* Main.storyboard */; };
 		48E4B48124552CA9002DEBAF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 48E4B48024552CA9002DEBAF /* Assets.xcassets */; };
 		48E4B48424552CA9002DEBAF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 48E4B48224552CA9002DEBAF /* LaunchScreen.storyboard */; };
+		48E4B49524556CEC002DEBAF /* TeamTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48E4B49324556CEC002DEBAF /* TeamTableViewCell.swift */; };
+		48E4B49624556CEC002DEBAF /* TeamTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48E4B49424556CEC002DEBAF /* TeamTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		486DB8FC2455729F00C2E39D /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		486DB8FE2455738500C2E39D /* TeamsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsResponse.swift; sourceTree = "<group>"; };
+		486DB900245574EF00C2E39D /* TeamsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamsRepository.swift; sourceTree = "<group>"; };
+		486DB9032455C4E000C2E39D /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
+		48C5B7CB245D871A0036316B /* TeamDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailViewController.swift; sourceTree = "<group>"; };
+		48C5B7CC245D871A0036316B /* TeamDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamDetailViewController.xib; sourceTree = "<group>"; };
 		48E4B47424552C9C002DEBAF /* NBA App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "NBA App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		48E4B47724552C9C002DEBAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		48E4B47924552C9C002DEBAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +38,8 @@
 		48E4B48024552CA9002DEBAF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		48E4B48324552CA9002DEBAF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		48E4B48524552CA9002DEBAF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48E4B49324556CEC002DEBAF /* TeamTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamTableViewCell.swift; sourceTree = "<group>"; };
+		48E4B49424556CEC002DEBAF /* TeamTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TeamTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +53,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		486DB9022455C4A600C2E39D /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				486DB9032455C4E000C2E39D /* UIImageView.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		48E4B46B24552C9C002DEBAF = {
 			isa = PBXGroup;
 			children = (
@@ -56,15 +80,55 @@
 		48E4B47624552C9C002DEBAF /* NBA App */ = {
 			isa = PBXGroup;
 			children = (
-				48E4B47724552C9C002DEBAF /* AppDelegate.swift */,
-				48E4B47924552C9C002DEBAF /* SceneDelegate.swift */,
-				48E4B47B24552C9C002DEBAF /* ViewController.swift */,
-				48E4B47D24552C9C002DEBAF /* Main.storyboard */,
+				486DB9022455C4A600C2E39D /* Helper */,
+				48E4B48B245551DE002DEBAF /* Base */,
+				48E4B48C24555625002DEBAF /* Controller */,
+				48E4B48D2455574F002DEBAF /* Model */,
+				48E4B48E24555770002DEBAF /* View */,
 				48E4B48024552CA9002DEBAF /* Assets.xcassets */,
-				48E4B48224552CA9002DEBAF /* LaunchScreen.storyboard */,
 				48E4B48524552CA9002DEBAF /* Info.plist */,
 			);
 			path = "NBA App";
+			sourceTree = "<group>";
+		};
+		48E4B48B245551DE002DEBAF /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				48E4B47724552C9C002DEBAF /* AppDelegate.swift */,
+				48E4B47924552C9C002DEBAF /* SceneDelegate.swift */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		48E4B48C24555625002DEBAF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				48E4B49324556CEC002DEBAF /* TeamTableViewCell.swift */,
+				48E4B47B24552C9C002DEBAF /* ViewController.swift */,
+				48C5B7CB245D871A0036316B /* TeamDetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48E4B48D2455574F002DEBAF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				486DB8FC2455729F00C2E39D /* Team.swift */,
+				486DB8FE2455738500C2E39D /* TeamsResponse.swift */,
+				486DB900245574EF00C2E39D /* TeamsRepository.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		48E4B48E24555770002DEBAF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				48C5B7CC245D871A0036316B /* TeamDetailViewController.xib */,
+				48E4B49424556CEC002DEBAF /* TeamTableViewCell.xib */,
+				48E4B47D24552C9C002DEBAF /* Main.storyboard */,
+				48E4B48224552CA9002DEBAF /* LaunchScreen.storyboard */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,9 +189,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48E4B49624556CEC002DEBAF /* TeamTableViewCell.xib in Resources */,
 				48E4B48424552CA9002DEBAF /* LaunchScreen.storyboard in Resources */,
 				48E4B48124552CA9002DEBAF /* Assets.xcassets in Resources */,
 				48E4B47F24552C9C002DEBAF /* Main.storyboard in Resources */,
+				48C5B7CE245D871A0036316B /* TeamDetailViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,8 +204,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				486DB9042455C4E000C2E39D /* UIImageView.swift in Sources */,
+				48C5B7CD245D871A0036316B /* TeamDetailViewController.swift in Sources */,
+				48E4B49524556CEC002DEBAF /* TeamTableViewCell.swift in Sources */,
 				48E4B47C24552C9C002DEBAF /* ViewController.swift in Sources */,
+				486DB901245574EF00C2E39D /* TeamsRepository.swift in Sources */,
 				48E4B47824552C9C002DEBAF /* AppDelegate.swift in Sources */,
+				486DB8FF2455738500C2E39D /* TeamsResponse.swift in Sources */,
+				486DB8FD2455729F00C2E39D /* Team.swift in Sources */,
 				48E4B47A24552C9C002DEBAF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

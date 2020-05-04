@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 struct Team : Decodable {
     let logoUrl: URL
@@ -23,5 +24,14 @@ struct Team : Decodable {
         case teamDesc = "strDescriptionEN"
         case stadium = "strStadium"
         case stadiumImageUrl = "strStadiumThumb"
+    }
+}
+
+struct TeamWrapper {
+    var logoImage: UIImage?
+    let team: Team
+    
+    init(team: Team) {
+        self.team = team
     }
 }

@@ -8,7 +8,7 @@
 
 import UIKit
 
-let nbaTeams = getTeams()
+var nbaTeams = getTeams().map({team -> TeamWrapper in TeamWrapper(team: team)})
 
 class ViewController: UIViewController {
 
@@ -39,10 +39,16 @@ extension ViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TeamCell", for: indexPath) as! TeamTableViewCell
         
-        let team = nbaTeams[indexPath.row]
+        let team = nbaTeams[indexPath.row].team
         cell.TeamName.text = team.teamName
         cell.TeamStadium.text = team.stadium
-        cell.TeamLogo.load(url: team.logoUrl)
+        if let logo = nbaTeams[indexPath.row].logoImage {
+            cell.TeamLogo.image = logo
+        } else {
+            cell.TeamLogo.load(url: team.logoUrl) { image in
+                nbaTeams[indexPath.row].logoImage = image
+            }
+        }
         return cell
     }
 }
@@ -50,7 +56,7 @@ extension ViewController: UITableViewDataSource {
 extension ViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detail = TeamDetailViewController(nibName: "TeamDetailViewController", bundle: nil)
-        detail.team = nbaTeams[indexPath.row]
+        detail.team = nbaTeams[indexPath.row].team
         self.navigationController?.pushViewController(detail, animated: true)
     }
 }

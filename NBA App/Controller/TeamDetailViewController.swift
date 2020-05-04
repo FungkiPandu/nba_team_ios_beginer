@@ -24,8 +24,8 @@ class TeamDetailViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         if let res = team {
-            imgBannerView.load(url: res.stadiumImageUrl ?? res.bannerUrl)
-            imgLogoView.load(url: res.logoUrl)
+            imgBannerView.load(url: res.stadiumImageUrl ?? res.bannerUrl, onWillLoad: nil)
+            imgLogoView.load(url: res.logoUrl, onWillLoad: nil)
             lbTeamName.text = res.teamName
             lbStadium.text = res.stadium
             txtDescriptions.text = res.teamDesc
